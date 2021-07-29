@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(fonts/Lexend-Regular.ttf);
+}
+
+body {
+    font-family: "Lexend";
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(252, 228, 197);
+    margin: 0;
+    padding: 0;
+}
+
+nav .logo {
+    font-weight: bold;
+}
+
+nav .logo p {
+    color: black;
+    float: left;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-flex;
+    list-style: none;
+    text-decoration: underline;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 600px;
+    background-image: url("./images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.models {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-models {
+    font-size: 30px;
+}
+
+.model-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.model {
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.model h4 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.one {
+    background-image: url("./images/model-1.jpg");
+}
+
+.two {
+    background-image: url("./images/model-2.jpg");
+}
+
+.three {
+    background-image: url("./images/model-3.jpg");
+}
+
+.four {
+    background-image: url("./images/model-4.jpg");
+}
+
+.five {
+    background-image: url("./images/model-5.jpg");
+}
+
+.six {
+    background-image: url("./images/model-6.jpg");
+}
+
+.seven {
+    background-image: url("./images/model-7.jpg");
+}
+
+.eight {
+    background-image: url("./images/model-8.jpg");
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.team img {
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+}
+
+.team-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.team {
+    text-align: center;
+}
+
+#name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#position {
+    padding-bottom: 20px;
+}
+
+.title-team {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+address {
+    margin-top: 20px;
+}
+
+.copyright {
+    margin-top: 30px;
+}
+
+
+@media (min-width: 150px) and (max-width: 480px){
+    body {
+        width: 480px;
+        text-align: center;
+    }
+
+    nav .logo p {
+        padding: 20px;
+        margin: 0px 18px;
+    }
+
+    nav {
+        width: 100%;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 20px;
+        margin: 0 -50px;
+        width: 200px;
+    }
+
+    .models {
+        font-size: 20px;
+        margin: 0 -50px;
+        width: 480px;
+    }
+
+    .teams {
+        display: none;
+   }
+
+   footer {
+        font-size: 20px;
+        margin: 0 -50px;
+        width: 480px;
+        padding: 30px;
+        background-color: bisque;
+   }
+
+}
+
+
+@media (min-width: 482px) and (max-width: 768px){
+    nav ul li {
+        display: none;
+    }
+}
+
+
